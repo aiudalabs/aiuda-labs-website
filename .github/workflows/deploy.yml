@@ -18,7 +18,7 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '18'
+        node-version: '20'
         cache: 'npm'
         
     - name: Install dependencies
@@ -30,10 +30,13 @@ jobs:
         CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
       run: npm run build
       
+    - name: Install Firebase CLI
+      run: npm install -g firebase-tools@^13.0.0
+      
     - name: Deploy to Firebase
-      uses: FirebaseExtended/action-hosting-deploy@v0
-      with:
-        repoToken: '${{ secrets.GITHUB_TOKEN }}'
-        firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_AIUDA_LABS_WEBSITE }}'
-        projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'
-        channelId: live
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_AIUDA_LABS_WEBSITE }}
+      run: |
+        echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_AIUDA_LABS_WEBSITE }}' > firebase-service-account.json
+        firebase use ${{ secrets.FIREBASE_PROJECT_ID }}
+        firebase deploy --only hosting --service-account firebase-service-account.json
