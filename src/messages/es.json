@@ -1,0 +1,116 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Nosotros",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Transformamos datos en",
+    "titleAccent": "decisiones inteligentes",
+    "description": "Somos Aiuda Labs, una startup especializada en las últimas tendencias de IA generativa, ciencia de datos, ingeniería de datos y machine learning. Creamos soluciones innovadoras que impulsan el crecimiento de tu negocio.",
+    "cta": {
+      "services": "Nuestros Servicios",
+      "contact": "Contáctanos"
+    },
+    "cards": {
+      "generativeAI": "IA Generativa",
+      "bigData": "Big Data",
+      "machineLearning": "Machine Learning",
+      "analytics": "Analítica"
+    }
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones integrales de IA y datos para impulsar tu negocio",
+    "generativeAI": {
+      "title": "IA Generativa",
+      "description": "Implementamos las últimas tecnologías de IA generativa para automatizar procesos, crear contenido y mejorar la experiencia del usuario.",
+      "features": [
+        "Chatbots inteligentes",
+        "Generación de contenido",
+        "Análisis de texto y documentos",
+        "Asistentes virtuales"
+      ]
+    },
+    "dataScience": {
+      "title": "Ciencia de Datos",
+      "description": "Extraemos insights valiosos de tus datos para tomar decisiones informadas y estratégicas que impulsen el crecimiento.",
+      "features": [
+        "Análisis predictivo",
+        "Visualización de datos",
+        "Modelado estadístico",
+        "Business Intelligence"
+      ]
+    },
+    "dataEngineering": {
+      "title": "Ingeniería de Datos",
+      "description": "Diseñamos y construimos infraestructuras robustas para la gestión, procesamiento y almacenamiento de datos a gran escala.",
+      "features": [
+        "Pipelines de datos",
+        "Data warehouses",
+        "Procesos ETL/ELT",
+        "Arquitecturas cloud"
+      ]
+    },
+    "machineLearning": {
+      "title": "Machine Learning",
+      "description": "Desarrollamos modelos de machine learning personalizados que aprenden de tus datos para automatizar decisiones y procesos.",
+      "features": [
+        "Modelos predictivos",
+        "Sistemas de recomendación",
+        "Detección de anomalías",
+        "MLOps y deployment"
+      ]
+    }
+  },
+  "about": {
+    "title": "Sobre Aiuda Labs",
+    "lead": "Somos una startup innovadora enfocada en democratizar el acceso a las tecnologías de inteligencia artificial más avanzadas.",
+    "description": "En Aiuda Labs, creemos que la IA y el análisis de datos son las herramientas clave para resolver los desafíos más complejos del mundo moderno. Nuestro equipo de expertos combina conocimiento técnico profundo con una visión estratégica para entregar soluciones que realmente impactan.",
+    "stats": {
+      "projects": "Proyectos Completados",
+      "clients": "Clientes Satisfechos",
+      "accuracy": "Precisión en Modelos"
+    },
+    "techStack": {
+      "title": "Tecnologías que Dominamos"
+    }
+  },
+  "contact": {
+    "title": "¿Listo para transformar tu negocio?",
+    "subtitle": "Contáctanos y descubre cómo la IA puede revolucionar tu empresa",
+    "info": {
+      "email": "Email",
+      "phone": "Teléfono",
+      "whatsapp": "WhatsApp",
+      "location": "Ubicación"
+    },
+    "form": {
+      "name": "Tu nombre",
+      "email": "Tu email",
+      "company": "Tu empresa",
+      "message": "Cuéntanos sobre tu proyecto",
+      "submit": "Enviar Mensaje"
+    }
+  },
+  "footer": {
+    "description": "Transformando el futuro con inteligencia artificial y análisis de datos.",
+    "services": "Servicios",
+    "servicesList": {
+      "generativeAI": "IA Generativa",
+      "dataScience": "Ciencia de Datos",
+      "dataEngineering": "Ingeniería de Datos",
+      "machineLearning": "Machine Learning"
+    },
+    "company": "Empresa",
+    "careers": "Carreras",
+    "follow": "Síguenos",
+    "rights": "Todos los derechos reservados."
+  },
+  "thankYou": {
+    "title": "¡Gracias!",
+    "message": "Tu mensaje ha sido enviado exitosamente. Te responderemos dentro de 24 horas.",
+    "backHome": "Volver al Inicio"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Transforming data into",
+    "titleAccent": "intelligent decisions",
+    "description": "We are Aiuda Labs, a startup specialized in the latest generative AI trends, data science, data engineering, and machine learning. We create innovative solutions that drive your business growth.",
+    "cta": {
+      "services": "Our Services",
+      "contact": "Contact Us"
+    },
+    "cards": {
+      "generativeAI": "Generative AI",
+      "bigData": "Big Data",
+      "machineLearning": "Machine Learning",
+      "analytics": "Analytics"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive AI and data solutions to drive your business",
+    "generativeAI": {
+      "title": "Generative AI",
+      "description": "We implement the latest generative AI technologies to automate processes, create content, and enhance user experience.",
+      "features": [
+        "Intelligent chatbots",
+        "Content generation",
+        "Text and document analysis",
+        "Virtual assistants"
+      ]
+    },
+    "dataScience": {
+      "title": "Data Science",
+      "description": "We extract valuable insights from your data to make informed and strategic decisions that drive growth.",
+      "features": [
+        "Predictive analytics",
+        "Data visualization",
+        "Statistical modeling",
+        "Business Intelligence"
+      ]
+    },
+    "dataEngineering": {
+      "title": "Data Engineering",
+      "description": "We design and build robust infrastructures for the management, processing, and storage of large-scale data.",
+      "features": [
+        "Data pipelines",
+        "Data warehouses",
+        "ETL/ELT processes",
+        "Cloud architectures"
+      ]
+    },
+    "machineLearning": {
+      "title": "Machine Learning",
+      "description": "We develop personalized machine learning models that learn from your data to automate decisions and processes.",
+      "features": [
+        "Predictive models",
+        "Recommendation systems",
+        "Anomaly detection",
+        "MLOps and deployment"
+      ]
+    }
+  },
+  "about": {
+    "title": "About Aiuda Labs",
+    "lead": "We are an innovative startup focused on democratizing access to the most advanced artificial intelligence technologies.",
+    "description": "At Aiuda Labs, we believe that AI and data analysis are the key tools to solve the most complex challenges of the modern world. Our team of experts combines deep technical knowledge with strategic vision to deliver solutions that truly impact.",
+    "stats": {
+      "projects": "Projects Completed",
+      "clients": "Satisfied Clients",
+      "accuracy": "Model Accuracy"
+    },
+    "techStack": {
+      "title": "Technologies We Master"
+    }
+  },
+  "contact": {
+    "title": "Ready to transform your business?",
+    "subtitle": "Contact us and discover how AI can revolutionize your company",
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "location": "Location"
+    },
+    "form": {
+      "name": "Your name",
+      "email": "Your email",
+      "company": "Your company",
+      "message": "Tell us about your project",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Transforming the future with artificial intelligence and data analysis.",
+    "services": "Services",
+    "servicesList": {
+      "generativeAI": "Generative AI",
+      "dataScience": "Data Science",
+      "dataEngineering": "Data Engineering",
+      "machineLearning": "Machine Learning"
+    },
+    "company": "Company",
+    "careers": "Careers",
+    "follow": "Follow Us",
+    "rights": "All rights reserved."
+  },
+  "thankYou": {
+    "title": "Thank You!",
+    "message": "Your message has been sent successfully. We'll get back to you within 24 hours.",
+    "backHome": "Back to Home"
+  }
+}
