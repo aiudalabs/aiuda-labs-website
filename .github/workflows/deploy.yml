@@ -35,5 +35,5 @@ jobs:
       with:
         repoToken: '${{ secrets.GITHUB_TOKEN }}'
         firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_AIUDA_LABS_WEBSITE }}'
-        projectId: aiuda-labs-website
+        projectId: '${{ secrets.FIREBASE_PROJECT_ID }}'
         channelId: live
