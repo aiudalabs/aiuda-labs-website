@@ -18,20 +18,30 @@ export default function Navigation() {
   const t = useTranslations('navigation');
 
   const currentLocale = typeof window !== 'undefined' 
-    ? window.location.pathname.includes('/es') ? 'es' 
-      : window.location.pathname.includes('/pt') ? 'pt' 
+    ? window.location.pathname.startsWith('/es') ? 'es' 
+      : window.location.pathname.startsWith('/pt') ? 'pt' 
       : 'en'
     : 'en';
 
   const handleLanguageChange = (locale: string) => {
     if (typeof window !== 'undefined') {
-      // For static export, we need to navigate to the correct HTML file
-      if (locale === 'en') {
-        window.location.href = '/en.html';
-      } else if (locale === 'es') {
-        window.location.href = '/es.html';
-      } else if (locale === 'pt') {
-        window.location.href = '/pt.html';
+      // Check if we're running on localhost (development)
+      const isDevelopment = window.location.hostname === 'localhost' || 
+                           window.location.hostname === '127.0.0.1' ||
+                           window.location.port !== '';
+      
+      if (isDevelopment) {
+        // In development, use normal routes
+        window.location.href = `/${locale}`;
+      } else {
+        // In production/static export, use .html files
+        if (locale === 'en') {
+          window.location.href = '/en.html';
+        } else if (locale === 'es') {
+          window.location.href = '/es.html';
+        } else if (locale === 'pt') {
+          window.location.href = '/pt.html';
+        }
       }
     }
     setShowLangMenu(false);
@@ -72,6 +82,12 @@ export default function Navigation() {
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
             >
               {t('about')}
+            </Link>
+            <Link 
+              href="/blog" 
+              className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+            >
+              {t('blog', { default: 'Blog' })}
             </Link>
             <Link 
               href="/#contact" 
@@ -146,6 +162,13 @@ export default function Navigation() {
                 onClick={() => setIsOpen(false)}
               >
                 {t('about')}
+              </Link>
+              <Link 
+                href="/blog"
+                className="block px-3 py-2 text-gray-700 hover:text-blue-600 font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                {t('blog', { default: 'Blog' })}
               </Link>
               <Link 
                 href="/#contact"

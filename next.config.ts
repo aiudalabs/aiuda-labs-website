@@ -8,14 +8,26 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.ctfassets.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'assets.ctfassets.net',
+      },
+    ],
   },
-  experimental: {
-    turbo: {
-      rules: {
-        '*.svg': {
-          loaders: ['@svgr/webpack'],
-          as: '*.js',
-        },
+  env: {
+    CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
+    CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
+  },
+  turbopack: {
+    rules: {
+      '*.svg': {
+        loaders: ['@svgr/webpack'],
+        as: '*.js',
       },
     },
   },

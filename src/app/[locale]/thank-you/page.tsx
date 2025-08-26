@@ -3,6 +3,15 @@ import { Link } from '@/i18n/routing';
 import { CheckCircle } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 
+// Generate static params for all locales
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'es' },
+    { locale: 'pt' }
+  ];
+}
+
 export default function ThankYouPage() {
   const t = useTranslations('thankYou');
   
