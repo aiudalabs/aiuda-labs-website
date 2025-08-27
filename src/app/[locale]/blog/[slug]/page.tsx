@@ -1,9 +1,11 @@
 import { getBlogPost, getBlogPosts } from '@/lib/contentful';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS, MARKS } from '@contentful/rich-text-types';
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
+import SocialShare from '@/components/SocialShare';
 import { Calendar, User, ArrowLeft, Tag } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
@@ -28,6 +30,70 @@ export async function generateStaticParams() {
     console.error('Error fetching blog posts for static generation:', error);
     return [];
   }
+}
+
+// Generate metadata for SEO and social sharing
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<{ slug: string; locale: string }>
+}): Promise<Metadata> {
+  const resolvedParams = await params;
+  const post = await getBlogPost(resolvedParams.slug);
+  
+  if (!post) {
+    return {
+      title: 'Post Not Found - Aiuda Labs',
+    };
+  }
+
+  const ogImage = post.fields.featuredImage 
+    ? `https:${(post.fields.featuredImage as any).fields.file.url}` // eslint-disable-line @typescript-eslint/no-explicit-any
+    : 'https://aiudalabs.com/aiudalabs_white.png'; // fallback image
+
+  const url = `https://aiudalabs.com/${resolvedParams.locale}/blog/${post.fields.slug}`;
+
+  return {
+    title: `${post.fields.title} - Aiuda Labs Blog`,
+    description: post.fields.excerpt,
+    keywords: post.fields.tags?.join(', '),
+    authors: [{ name: post.fields.author }],
+    openGraph: {
+      title: post.fields.title,
+      description: post.fields.excerpt,
+      url,
+      siteName: 'Aiuda Labs',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: post.fields.title,
+        },
+      ],
+      locale: resolvedParams.locale,
+      type: 'article',
+      publishedTime: post.fields.publishedDate,
+      authors: [post.fields.author],
+      section: 'Technology',
+      tags: post.fields.tags,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.fields.title,
+      description: post.fields.excerpt,
+      images: [ogImage],
+      creator: '@aiudalabs',
+    },
+    alternates: {
+      canonical: url,
+      languages: {
+        'en': `https://aiudalabs.com/en/blog/${post.fields.slug}`,
+        'es': `https://aiudalabs.com/es/blog/${post.fields.slug}`,
+        'pt': `https://aiudalabs.com/pt/blog/${post.fields.slug}`,
+      },
+    },
+  };
 }
 
 // Rich text rendering options
@@ -107,8 +173,41 @@ export default async function BlogPostPage({
     });
   };
 
+  // Structured data for better social sharing
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.fields.title,
+    "description": post.fields.excerpt,
+    "image": post.fields.featuredImage 
+      ? `https:${(post.fields.featuredImage as any).fields.file.url}` // eslint-disable-line @typescript-eslint/no-explicit-any
+      : 'https://aiudalabs.com/aiudalabs_white.png',
+    "author": {
+      "@type": "Person",
+      "name": post.fields.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Aiuda Labs",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aiudalabs.com/aiudalabs_white.png"
+      }
+    },
+    "datePublished": post.fields.publishedDate,
+    "dateModified": post.fields.publishedDate,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://aiudalabs.com/${locale}/blog/${post.fields.slug}`
+    }
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Navigation />
       
       {/* Hero Section */}
@@ -155,15 +254,22 @@ export default async function BlogPostPage({
               </h1>
 
               {/* Meta */}
-              <div className="flex items-center gap-6 text-gray-600 mb-8">
-                <div className="flex items-center gap-2">
-                  <User className="w-5 h-5" />
-                  <span>{post.fields.author}</span>
+              <div className="flex items-center justify-between mb-8">
+                <div className="flex items-center gap-6 text-gray-600">
+                  <div className="flex items-center gap-2">
+                    <User className="w-5 h-5" />
+                    <span>{post.fields.author}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Calendar className="w-5 h-5" />
+                    <span>{formatDate(post.fields.publishedDate)}</span>
+                  </div>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-5 h-5" />
-                  <span>{formatDate(post.fields.publishedDate)}</span>
-                </div>
+                <SocialShare
+                  title={post.fields.title}
+                  excerpt={post.fields.excerpt}
+                  url={typeof window !== 'undefined' ? window.location.href : `https://aiudalabs.com/${locale}/blog/${post.fields.slug}`}
+                />
               </div>
 
               {/* Featured Image */}
@@ -188,6 +294,21 @@ export default async function BlogPostPage({
             {/* Content */}
             <div className="prose prose-lg max-w-none">
               {documentToReactComponents(post.fields.content, richTextOptions)}
+            </div>
+
+            {/* Share Section */}
+            <div className="mt-12 pt-8 border-t border-gray-200">
+              <div className="flex items-center justify-between">
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Enjoyed this post?</h3>
+                  <p className="text-gray-600">Share it with your network!</p>
+                </div>
+                <SocialShare
+                  title={post.fields.title}
+                  excerpt={post.fields.excerpt}
+                  url={typeof window !== 'undefined' ? window.location.href : `https://aiudalabs.com/${locale}/blog/${post.fields.slug}`}
+                />
+              </div>
             </div>
           </article>
 
