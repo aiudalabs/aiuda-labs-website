@@ -102,7 +102,7 @@ const richTextOptions = {
     [MARKS.BOLD]: (text: React.ReactNode) => <strong className="font-semibold">{text}</strong>,
     [MARKS.ITALIC]: (text: React.ReactNode) => <em className="italic">{text}</em>,
     [MARKS.CODE]: (text: React.ReactNode) => (
-      <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">{text}</code>
+      <code className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded text-sm font-mono text-gray-800 dark:text-gray-200">{text}</code>
     ),
   },
   renderNode: {
@@ -118,19 +118,31 @@ const richTextOptions = {
     [BLOCKS.HEADING_3]: (node: any, children: React.ReactNode) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
       <h3 className="text-xl font-bold text-gray-900 mt-6 mb-3">{children}</h3>
     ),
+    [BLOCKS.HEADING_4]: (node: any, children: React.ReactNode) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
+      <h4 className="text-lg font-bold text-gray-900 mt-4 mb-2">{children}</h4>
+    ),
+    [BLOCKS.HEADING_5]: (node: any, children: React.ReactNode) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
+      <h5 className="text-base font-bold text-gray-900 mt-4 mb-2">{children}</h5>
+    ),
+    [BLOCKS.HEADING_6]: (node: any, children: React.ReactNode) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
+      <h6 className="text-sm font-bold text-gray-900 mt-4 mb-2">{children}</h6>
+    ),
     [BLOCKS.UL_LIST]: (node: any, children: React.ReactNode) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
-      <ul className="mb-6 space-y-2 list-disc list-inside text-gray-700">{children}</ul>
+      <ul className="mb-6 space-y-2 list-disc ml-6 text-gray-700">{children}</ul>
     ),
     [BLOCKS.OL_LIST]: (node: any, children: React.ReactNode) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
-      <ol className="mb-6 space-y-2 list-decimal list-inside text-gray-700">{children}</ol>
+      <ol className="mb-6 space-y-2 list-decimal ml-6 text-gray-700">{children}</ol>
     ),
     [BLOCKS.LIST_ITEM]: (node: any, children: React.ReactNode) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
-      <li>{children}</li>
+      <li className="mb-1">{children}</li>
     ),
     [BLOCKS.QUOTE]: (node: any, children: React.ReactNode) => ( // eslint-disable-line @typescript-eslint/no-explicit-any
       <blockquote className="border-l-4 border-blue-500 pl-6 my-6 italic text-gray-600 bg-gray-50 py-4">
         {children}
       </blockquote>
+    ),
+    [BLOCKS.HR]: () => (
+      <hr className="my-8 border-t border-gray-300" />
     ),
     [BLOCKS.EMBEDDED_ASSET]: (node: any) => { // eslint-disable-line @typescript-eslint/no-explicit-any
       const asset = node.data.target as any; // eslint-disable-line @typescript-eslint/no-explicit-any
