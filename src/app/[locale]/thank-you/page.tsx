@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/routing';
 import { CheckCircle } from 'lucide-react';
 import Navigation from '@/components/Navigation';
@@ -12,8 +12,13 @@ export async function generateStaticParams() {
   ];
 }
 
-export default function ThankYouPage() {
-  const t = useTranslations('thankYou');
+export default async function ThankYouPage({
+  params
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'thankYou' });
   
   return (
     <>

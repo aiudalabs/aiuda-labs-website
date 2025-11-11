@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
+import { useTranslations, useLocale } from 'next-intl';
+import { Link, usePathname } from '@/i18n/routing';
 import { Menu, X, Globe } from 'lucide-react';
 import Image from 'next/image';
 
@@ -16,35 +16,23 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [showLangMenu, setShowLangMenu] = useState(false);
   const t = useTranslations('navigation');
+  const currentLocale = useLocale();
+  const pathname = usePathname();
 
-  const currentLocale = typeof window !== 'undefined' 
-    ? window.location.pathname.startsWith('/es') ? 'es' 
-      : window.location.pathname.startsWith('/pt') ? 'pt' 
-      : 'en'
-    : 'en';
-
-  const handleLanguageChange = (locale: string) => {
-    if (typeof window !== 'undefined') {
-      // Check if we're running on localhost (development)
-      const isDevelopment = window.location.hostname === 'localhost' || 
-                           window.location.hostname === '127.0.0.1' ||
-                           window.location.port !== '';
-      
-      if (isDevelopment) {
-        // In development, use normal routes
-        window.location.href = `/${locale}`;
-      } else {
-        // In production/static export, use .html files
-        if (locale === 'en') {
-          window.location.href = '/en.html';
-        } else if (locale === 'es') {
-          window.location.href = '/es.html';
-        } else if (locale === 'pt') {
-          window.location.href = '/pt.html';
-        }
-      }
-    }
+  const handleLanguageChange = (newLocale: string) => {
     setShowLangMenu(false);
+
+    // For static export, use direct navigation
+    if (typeof window !== 'undefined') {
+      // Get the current path without locale prefix
+      const pathWithoutLocale = pathname;
+
+      // Build new URL with new locale
+      const newPath = `/${newLocale}${pathWithoutLocale === '/' ? '' : pathWithoutLocale}`;
+
+      // Navigate to new locale
+      window.location.href = newPath;
+    }
   };
 
   return (

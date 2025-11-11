@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <meta http-equiv="refresh" content="0; url=/en">
+  <script>
+    // Redirect to the default locale based on browser language
+    (function() {
+      const browserLang = navigator.language || navigator.userLanguage;
+      const lang = browserLang.toLowerCase().startsWith('es') ? 'es'
+                 : browserLang.toLowerCase().startsWith('pt') ? 'pt'
+                 : 'en';
+      window.location.replace('/' + lang);
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a href="/en">English version</a>...</p>
+  <p>Or choose: <a href="/es">Español</a> | <a href="/pt">Português</a></p>
+</body>
+</html>
