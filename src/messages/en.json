@@ -4,584 +4,146 @@
     "services": "Services",
     "about": "About",
     "blog": "Blog",
-    "contact": "Contact",
-    "caseStudies": "Case Studies"
+    "contact": "Contact"
   },
   "hero": {
-    "title": "Transforming data into",
-    "titleAccent": "intelligent decisions",
-    "description": "We are Aiuda Labs, a startup specialized in the latest generative AI trends, data science, data engineering, and machine learning. We create innovative solutions that drive your business growth.",
-    "tagline": "AI that helps. Literally.",
+    "title": "Technology solutions powered by",
+    "titleAccent": "AI & expertise",
+    "description": "We help businesses grow with modern IT services enhanced by artificial intelligence. From cloud infrastructure to AI implementation, we deliver results.",
     "cta": {
-      "services": "Our Services",
-      "contact": "Contact Us"
-    },
-    "cards": {
-      "generativeAI": "Generative AI",
-      "bigData": "Big Data",
-      "machineLearning": "Machine Learning",
-      "analytics": "Analytics"
+      "primary": "Book a Call",
+      "secondary": "View Services"
     }
   },
   "services": {
     "title": "Our Services",
-    "subtitle": "Comprehensive AI and data solutions to drive your business",
-    "generativeAI": {
-      "title": "Generative AI",
-      "description": "We implement the latest generative AI technologies to automate processes, create content, and enhance user experience.",
+    "subtitle": "Comprehensive technology solutions to drive your business forward",
+    "cta": "Let's discuss your project",
+    "software": {
+      "title": "Software Engineering",
+      "description": "Custom software development with modern frameworks and best practices",
       "features": [
-        "Intelligent chatbots",
-        "Content generation",
-        "Text and document analysis",
-        "Virtual assistants"
+        "Full-stack development",
+        "API design & integration",
+        "Legacy system modernization"
       ]
     },
-    "dataScience": {
-      "title": "Data Science",
-      "description": "We extract valuable insights from your data to make informed and strategic decisions that drive growth.",
+    "cloud": {
+      "title": "Cloud & Infrastructure",
+      "description": "Scalable cloud solutions on AWS, Azure, and Google Cloud Platform",
       "features": [
-        "Predictive analytics",
-        "Data visualization",
-        "Statistical modeling",
-        "Business Intelligence"
+        "Cloud migration & optimization",
+        "Infrastructure as Code",
+        "Multi-cloud strategies"
       ]
     },
-    "dataEngineering": {
+    "ai": {
+      "title": "AI & Machine Learning",
+      "description": "Practical AI solutions including LLMs, computer vision, and predictive models",
+      "features": [
+        "LLM integration (ChatGPT, Claude)",
+        "Custom ML models",
+        "AI-powered automation"
+      ]
+    },
+    "security": {
+      "title": "Cybersecurity",
+      "description": "Comprehensive security solutions to protect your digital assets",
+      "features": [
+        "Security audits & testing",
+        "Compliance (SOC2, ISO 27001)",
+        "Threat monitoring"
+      ]
+    },
+    "data": {
       "title": "Data Engineering",
-      "description": "We design and build robust infrastructures for the management, processing, and storage of large-scale data.",
+      "description": "Build robust data pipelines and warehouses for actionable insights",
       "features": [
-        "Data pipelines",
-        "Data warehouses",
-        "ETL/ELT processes",
-        "Cloud architectures"
+        "Data pipelines & ETL",
+        "Data warehouse design",
+        "Real-time analytics"
       ]
     },
-    "machineLearning": {
-      "title": "Machine Learning",
-      "description": "We develop personalized machine learning models that learn from your data to automate decisions and processes.",
+    "devops": {
+      "title": "DevOps & Automation",
+      "description": "Streamline development with CI/CD, automation, and monitoring",
       "features": [
-        "Predictive models",
-        "Recommendation systems",
-        "Anomaly detection",
-        "MLOps and deployment"
+        "CI/CD pipeline setup",
+        "Container orchestration",
+        "Infrastructure monitoring"
       ]
+    },
+    "consulting": {
+      "title": "Technology Consulting",
+      "description": "Strategic technology guidance for digital transformation and AI adoption",
+      "features": [
+        "Digital transformation roadmaps",
+        "Architecture reviews",
+        "Tech stack selection"
+      ]
+    },
+    "platform": {
+      "title": "Platform Engineering",
+      "description": "Build internal developer platforms that accelerate development teams",
+      "features": [
+        "Developer self-service",
+        "Platform automation",
+        "Golden paths & templates"
+      ]
+    }
+  },
+  "techStack": {
+    "title": "Technologies We Work With",
+    "subtitle": "Modern tech stack covering cloud, AI, development, and data platforms",
+    "note": "And many more technologies to fit your specific needs"
+  },
+  "process": {
+    "title": "How We Work",
+    "subtitle": "A proven process to deliver successful projects",
+    "steps": {
+      "0": {
+        "title": "Discovery & Planning",
+        "description": "We understand your business needs, challenges, and goals to create a tailored solution roadmap"
+      },
+      "1": {
+        "title": "Design & Architecture",
+        "description": "Our experts design scalable, secure solutions aligned with industry best practices"
+      },
+      "2": {
+        "title": "Build & Deploy",
+        "description": "Agile development with continuous delivery, testing, and stakeholder feedback"
+      },
+      "3": {
+        "title": "Support & Optimize",
+        "description": "Ongoing monitoring, optimization, and support to ensure long-term success"
+      }
     }
   },
   "about": {
-    "title": "About Aiuda Labs",
-    "lead": "We are an innovative startup focused on democratizing access to the most advanced artificial intelligence technologies.",
-    "description": "At Aiuda Labs, we believe that AI and data analysis are the key tools to solve the most complex challenges of the modern world. Our team of experts combines deep technical knowledge with strategic vision to deliver solutions that truly impact.",
-    "stats": {
-      "projects": "Projects Completed",
-      "clients": "Satisfied Clients",
-      "accuracy": "Model Accuracy"
-    },
-    "techStack": {
-      "title": "Technologies We Master"
-    },
-    "partnership": {
-      "title": "Flexible Partnership Models",
-      "staffAug": "Staff Augmentation for Startups",
-      "managed": "Managed Services for Enterprises",
-      "strategic": "Strategic Partnerships for Both"
-    },
-    "latam": {
-      "title": "Serving Clients Across LATAM",
-      "description": "Bilingual teams with deep understanding of Latin American business context, cultural nuances, and regulatory requirements including LGPD and regional compliance standards."
-    },
-    "partners": {
-      "title": "Technology Partners",
-      "note": "Certified partners delivering enterprise-grade solutions"
-    }
+    "title": "Why Choose Aiuda Labs",
+    "description": "We are a technology partner focused on delivering practical solutions that drive business results. Our team combines deep technical expertise with industry experience across cloud, AI, security, and modern software development. We serve clients across Latin America with bilingual teams and cultural understanding."
   },
   "contact": {
-    "title": "Ready to transform your business?",
-    "subtitle": "Contact us and discover how AI can revolutionize your company",
-    "info": {
-      "email": "Email",
-      "phone": "Phone",
-      "whatsapp": "WhatsApp",
-      "location": "Location"
-    },
+    "title": "Let's Build Something Great",
+    "subtitle": "Ready to transform your business with technology? Get in touch with us.",
     "form": {
-      "name": "Your name",
-      "email": "Your email",
-      "company": "Your company",
-      "companySize": "Company Size",
+      "name": "Your Name",
+      "email": "Email Address",
+      "company": "Company Name",
       "message": "Tell us about your project",
       "submit": "Send Message"
-    },
-    "partnership": {
-      "title": "Let's Build a Partnership",
-      "description": "We believe in long-term strategic partnerships (acompañamiento), not one-off projects. Let's discuss how we can help your business grow."
     }
   },
   "footer": {
-    "description": "Transforming the future with artificial intelligence and data analysis.",
-    "latam": "Serving clients across Mexico, Colombia, Argentina, Brazil, and Chile",
+    "description": "Technology solutions powered by AI and expertise",
     "services": "Services",
-    "servicesList": {
-      "generativeAI": "Generative AI",
-      "dataScience": "Data Science",
-      "dataEngineering": "Data Engineering",
-      "machineLearning": "Machine Learning"
-    },
     "company": "Company",
-    "careers": "Careers",
     "follow": "Follow Us",
     "rights": "All rights reserved."
   },
   "thankYou": {
-    "title": "Thank You!",
-    "message": "Your message has been sent successfully. We'll get back to you within 24 hours.",
+    "title": "Thank you for contacting us!",
+    "message": "We have received your message and will respond shortly.",
     "backHome": "Back to Home"
-  },
-  "valueProp": {
-    "startup": {
-      "label": "For Startups",
-      "title": "Build smarter, scale faster",
-      "subtitle": "AI-powered infrastructure without enterprise complexity or price tag",
-      "features": [
-        {
-          "title": "Quick wins in 30-90 days",
-          "description": "Rapid implementation focused on immediate business impact"
-        },
-        {
-          "title": "Flexible engagement models",
-          "description": "Senior-level expertise when you need it, how you need it"
-        },
-        {
-          "title": "Clear path from MVP to scale",
-          "description": "Infrastructure that grows with your business"
-        }
-      ],
-      "cta": "Start Your Journey"
-    },
-    "enterprise": {
-      "label": "For Enterprise",
-      "title": "Transform with confidence",
-      "subtitle": "Proven IT foundations enhanced by cutting-edge AI capabilities",
-      "features": [
-        {
-          "title": "Strategic transformation",
-          "description": "12-18 month phased approach with clear ROI milestones"
-        },
-        {
-          "title": "Risk management & compliance",
-          "description": "Enterprise-grade security and LATAM regulatory expertise"
-        },
-        {
-          "title": "Long-term partnership",
-          "description": "Ongoing acompañamiento throughout your digital journey"
-        }
-      ],
-      "cta": "Schedule Strategic Consultation"
-    }
-  },
-  "brandStory": {
-    "header": {
-      "title": "Where AI Meets Ayuda",
-      "subtitle": "Our name tells our story: artificial intelligence that genuinely helps",
-      "equation": "Technology that works for your business, not the other way around"
-    },
-    "foundingInsight": {
-      "title": "The Founding Insight",
-      "content": "AIuda Labs was founded on a simple but powerful conviction: Artificial Intelligence should help businesses, not complicate them. Our name—blending AI with the Spanish word 'ayuda' (help)—embodies our mission to make AI accessible, practical, and genuinely useful.",
-      "accent": "AI that helps. Literally."
-    },
-    "missionEvolution": {
-      "title": "The Mission Evolution",
-      "content": "What began as a commitment to 'helpful AI' has evolved into a comprehensive approach to technology transformation. We guide organizations through cloud migrations enhanced by AI optimization, data platforms that enable machine learning, and infrastructure that scales intelligently.",
-      "accent": "Technology that doesn't help isn't worth implementing"
-    },
-    "regionalCommitment": {
-      "title": "The Regional Commitment",
-      "content": "Latin America represents one of the world's most dynamic markets for AI adoption, with 95% of tech executives recognizing its transformational potential. AIuda Labs exists to bridge gaps with bilingual teams who understand both technology and business context.",
-      "accent": "Building partnerships, not vendor relationships"
-    },
-    "mission": {
-      "quote": "We exist to make artificial intelligence genuinely helpful for businesses—from startups to enterprises, across Latin America and beyond",
-      "tagline": "AI that helps. Literally."
-    },
-    "stats": [
-      {
-        "number": "95%",
-        "label": "LATAM execs see GenAI as transformational",
-        "color": "ai"
-      },
-      {
-        "number": "30-50%",
-        "label": "Faster process cycles our clients achieve",
-        "color": "ayuda"
-      },
-      {
-        "number": "10+",
-        "label": "Years combined team expertise",
-        "color": "security"
-      },
-      {
-        "number": "5",
-        "label": "Countries served across LATAM",
-        "color": "it"
-      }
-    ]
-  },
-  "services": {
-    "title": "Our Services",
-    "subtitle": "Integrated technology solutions that combine proven IT expertise with cutting-edge AI innovation",
-    "layers": {
-      "all": "All Services",
-      "strategic": "Strategic & Advisory",
-      "core": "Core Technology",
-      "delivery": "Delivery & Operations",
-      "specialized": "Specialized AI"
-    },
-    "strategic": {
-      "title": "Layer 1: Strategic & Advisory Services",
-      "digitalTransformation": {
-        "title": "Digital Transformation Consulting",
-        "description": "Enterprise-wide transformation roadmaps that align technology investments with business objectives",
-        "features": [
-          {
-            "title": "Maturity assessment",
-            "description": "Current state analysis and gap identification",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Transformation roadmap",
-            "description": "Phased approach with clear milestones",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Change management",
-            "description": "Organizational readiness and adoption planning",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "We don't just recommend technology—we partner with you to ensure your team can sustain improvements long after engagement ends, building capability rather than dependency."
-      },
-      "technologyStrategy": {
-        "title": "Technology Strategy",
-        "description": "Multi-year technology planning that balances innovation with pragmatic implementation",
-        "features": [
-          {
-            "title": "Architecture review",
-            "description": "Current state assessment and optimization opportunities",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Build vs. buy analysis",
-            "description": "Data-driven decision frameworks",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Vendor selection",
-            "description": "RFP management and evaluation",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "Navigate complex technology decisions with confidence, backed by our expertise across cloud platforms, AI frameworks, and enterprise systems."
-      },
-      "aiReadiness": {
-        "title": "AI Readiness Assessment",
-        "description": "Comprehensive evaluation of your organization's preparedness for AI adoption",
-        "features": [
-          {
-            "title": "Data maturity evaluation",
-            "description": "Quality, accessibility, and governance assessment",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Use case identification",
-            "description": "High-impact AI opportunities specific to your business",
-            "aiEnhanced": true
-          },
-          {
-            "title": "ROI modeling",
-            "description": "Financial impact projections and implementation roadmap",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Skip the hype and focus on AI applications that deliver measurable business value, with realistic timelines and resource requirements."
-      }
-    },
-    "core": {
-      "title": "Layer 2: Core Technology Domains",
-      "cloudInfrastructure": {
-        "title": "Cloud & Infrastructure",
-        "description": "Multi-cloud strategy, migration, and optimization enhanced by AI-powered cost management",
-        "features": [
-          {
-            "title": "Cloud migration",
-            "description": "AWS, Azure, GCP - lift-and-shift or re-architecture",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Cost optimization",
-            "description": "AI-driven resource rightsizing and waste reduction",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Infrastructure as Code",
-            "description": "Terraform, CloudFormation, automated provisioning",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "Startups get rapid cloud implementation in 30-90 days. Enterprises get phased migration strategies that ensure business continuity while modernizing infrastructure."
-      },
-      "dataAI": {
-        "title": "Data & AI",
-        "description": "End-to-end data platform modernization from warehousing to advanced AI/ML capabilities",
-        "features": [
-          {
-            "title": "Data platform modernization",
-            "description": "Modern data warehouses, lakes, and lakehouses",
-            "aiEnhanced": true
-          },
-          {
-            "title": "AI/ML solutions",
-            "description": "Custom models, AutoML, MLOps pipelines",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Generative AI integration",
-            "description": "LLM implementation, RAG systems, agents",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "We build data platforms that don't just store information—they actively help teams make better decisions through AI-powered insights and automation."
-      },
-      "securityCompliance": {
-        "title": "Security & Compliance",
-        "description": "Cybersecurity services with AI governance and LATAM regulatory expertise",
-        "features": [
-          {
-            "title": "Security architecture",
-            "description": "Zero-trust design, identity management, encryption",
-            "aiEnhanced": false
-          },
-          {
-            "title": "AI governance & risk",
-            "description": "Responsible AI frameworks, bias detection, explainability",
-            "aiEnhanced": true
-          },
-          {
-            "title": "LATAM compliance",
-            "description": "LGPD, data sovereignty, regional regulations",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "Implementing AI without proper governance creates risk. We ensure your AI systems are secure, compliant, and trustworthy from day one."
-      },
-      "platformEngineering": {
-        "title": "Platform Engineering",
-        "description": "Modern DevOps, application modernization, and intelligent automation",
-        "features": [
-          {
-            "title": "DevOps/CI-CD",
-            "description": "Automated pipelines, containerization, orchestration",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Application modernization",
-            "description": "Microservices, serverless, cloud-native architecture",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Integration services",
-            "description": "API management, event-driven architecture, iPaaS",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Modernize your development pipeline to reduce deployment time by 40-70% while maintaining the security and compliance standards critical for enterprise operations."
-      }
-    },
-    "delivery": {
-      "title": "Layer 3: Delivery & Operations",
-      "projectManagement": {
-        "title": "Project Management Office",
-        "description": "Agile delivery with AI-powered insights and intelligent tracking",
-        "features": [
-          {
-            "title": "Agile/Scrum delivery",
-            "description": "Sprint planning, ceremonies, retrospectives",
-            "aiEnhanced": true
-          },
-          {
-            "title": "PMO setup",
-            "description": "Governance frameworks, portfolio management",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Risk management",
-            "description": "AI-assisted risk identification and mitigation",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Keep projects on track with AI-enhanced monitoring that flags risks early, optimizes resource allocation, and predicts bottlenecks before they impact delivery."
-      },
-      "devops": {
-        "title": "DevOps Services",
-        "description": "Continuous delivery pipelines with intelligent automation and monitoring",
-        "features": [
-          {
-            "title": "CI/CD pipelines",
-            "description": "Automated build, test, deployment workflows",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Infrastructure automation",
-            "description": "Configuration management, IaC, self-healing systems",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Monitoring & observability",
-            "description": "AI-driven anomaly detection and alerting",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Implement DevOps practices that reduce deployment time from weeks to hours, with AI-powered monitoring that catches issues before they affect users."
-      },
-      "dba": {
-        "title": "Database Administration",
-        "description": "Database management, optimization, and AI-enhanced performance tuning",
-        "features": [
-          {
-            "title": "Database optimization",
-            "description": "Query tuning, indexing strategies, performance",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Backup & recovery",
-            "description": "Automated backups, disaster recovery planning",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Migration services",
-            "description": "Database upgrades, cloud migration, consolidation",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "Ensure your databases perform optimally with AI-assisted query optimization and predictive maintenance that prevents issues before they impact operations."
-      },
-      "managedServices": {
-        "title": "Managed Services",
-        "description": "24/7 operations support with proactive AI-driven maintenance",
-        "features": [
-          {
-            "title": "24/7 monitoring",
-            "description": "Continuous infrastructure and application monitoring",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Incident management",
-            "description": "Rapid response, root cause analysis, resolution",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Proactive maintenance",
-            "description": "AI-predicted issues, automated remediation",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Focus on your business while we manage your infrastructure, with AI systems that predict and prevent issues before they cause downtime."
-      }
-    },
-    "specialized": {
-      "title": "Layer 4: Specialized & Emerging Technologies",
-      "generativeAI": {
-        "title": "Generative AI Solutions",
-        "description": "LLM implementation, RAG systems, and custom AI applications",
-        "features": [
-          {
-            "title": "Chatbots & assistants",
-            "description": "Customer service, internal knowledge bases",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Content generation",
-            "description": "Marketing copy, documentation, creative assets",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Document processing",
-            "description": "OCR, extraction, analysis, summarization",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Implement GenAI solutions that deliver real business value—from 70% cost reduction in customer service to 82% faster document processing."
-      },
-      "agenticAI": {
-        "title": "Agentic AI Systems",
-        "description": "Autonomous AI agents that understand goals and execute tasks independently",
-        "features": [
-          {
-            "title": "Goal-driven execution",
-            "description": "Agents that break down complex tasks autonomously",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Multi-agent orchestration",
-            "description": "Coordinated systems for complex workflows",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Human-in-the-loop",
-            "description": "Approval workflows for critical decisions",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Agentic AI only helps when properly scoped. We start with a 'help assessment'—identifying where autonomous execution adds value versus where human judgment remains essential."
-      },
-      "processAutomation": {
-        "title": "Process Automation",
-        "description": "Intelligent automation combining RPA with AI for end-to-end workflows",
-        "features": [
-          {
-            "title": "RPA with AI",
-            "description": "Robotic process automation enhanced by ML",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Workflow optimization",
-            "description": "Process mining, bottleneck identification",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Integration automation",
-            "description": "System-to-system intelligent workflows",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Achieve 30-50% faster process cycles by automating repetitive tasks while maintaining the human oversight critical for trust and compliance."
-      },
-      "customAI": {
-        "title": "Custom AI Development",
-        "description": "Bespoke AI solutions tailored to your unique business challenges",
-        "features": [
-          {
-            "title": "Custom model development",
-            "description": "Purpose-built ML/AI models for your data",
-            "aiEnhanced": true
-          },
-          {
-            "title": "MLOps pipelines",
-            "description": "Automated training, testing, deployment",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Model monitoring",
-            "description": "Performance tracking, drift detection, retraining",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "When off-the-shelf solutions don't fit, we build custom AI systems that address your specific needs—with ongoing monitoring to ensure sustained performance."
-      }
-    },
-    "cta": {
-      "title": "Ready to build a strategic partnership?",
-      "subtitle": "Let's discuss how AI can help (ayuda) your business achieve measurable results",
-      "button": "Start the Conversation"
-    }
   }
 }

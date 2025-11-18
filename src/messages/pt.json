@@ -4,563 +4,146 @@
     "services": "Serviços",
     "about": "Sobre Nós",
     "blog": "Blog",
-    "contact": "Contato",
-    "caseStudies": "Casos de Sucesso"
+    "contact": "Contato"
   },
   "hero": {
-    "title": "Transformamos dados em",
-    "titleAccent": "decisões inteligentes",
-    "description": "Somos a Aiuda Labs, uma startup especializada nas últimas tendências de IA generativa, ciência de dados, engenharia de dados e machine learning. Criamos soluções inovadoras que impulsionam o crescimento do seu negócio.",
+    "title": "Soluções tecnológicas potencializadas por",
+    "titleAccent": "IA e expertise",
+    "description": "Ajudamos empresas a crescer com serviços de TI modernos potencializados por inteligência artificial. De infraestrutura em nuvem até implementação de IA, entregamos resultados.",
     "cta": {
-      "services": "Nossos Serviços",
-      "contact": "Entre em Contato"
-    },
-    "cards": {
-      "generativeAI": "IA Generativa",
-      "bigData": "Big Data",
-      "machineLearning": "Machine Learning",
-      "analytics": "Analítica"
+      "primary": "Agendar Chamada",
+      "secondary": "Ver Serviços"
     }
   },
   "services": {
     "title": "Nossos Serviços",
-    "subtitle": "Soluções integrais de IA e dados para impulsionar seu negócio",
-    "generativeAI": {
-      "title": "IA Generativa",
-      "description": "Implementamos as mais recentes tecnologias de IA generativa para automatizar processos, criar conteúdo e melhorar a experiência do usuário.",
+    "subtitle": "Soluções tecnológicas abrangentes para impulsionar seu negócio",
+    "cta": "Vamos conversar sobre seu projeto",
+    "software": {
+      "title": "Engenharia de Software",
+      "description": "Desenvolvimento de software personalizado com frameworks modernos e melhores práticas",
       "features": [
-        "Chatbots inteligentes",
-        "Geração de conteúdo",
-        "Análise de texto e documentos",
-        "Assistentes virtuais"
+        "Desenvolvimento full-stack",
+        "Design e integração de APIs",
+        "Modernização de sistemas legados"
       ]
     },
-    "dataScience": {
-      "title": "Ciência de Dados",
-      "description": "Extraímos insights valiosos dos seus dados para tomar decisões informadas e estratégicas que impulsionam o crescimento.",
+    "cloud": {
+      "title": "Nuvem e Infraestrutura",
+      "description": "Soluções escaláveis em AWS, Azure e Google Cloud Platform",
       "features": [
-        "Análise preditiva",
-        "Visualização de dados",
-        "Modelagem estatística",
-        "Business Intelligence"
+        "Migração e otimização cloud",
+        "Infraestrutura como Código",
+        "Estratégias multi-nuvem"
       ]
     },
-    "dataEngineering": {
+    "ai": {
+      "title": "IA e Machine Learning",
+      "description": "Soluções práticas de IA incluindo LLMs, visão computacional e modelos preditivos",
+      "features": [
+        "Integração de LLMs (ChatGPT, Claude)",
+        "Modelos ML personalizados",
+        "Automação com IA"
+      ]
+    },
+    "security": {
+      "title": "Cibersegurança",
+      "description": "Soluções de segurança abrangentes para proteger seus ativos digitais",
+      "features": [
+        "Auditorias e testes de segurança",
+        "Conformidade (SOC2, ISO 27001)",
+        "Monitoramento de ameaças"
+      ]
+    },
+    "data": {
       "title": "Engenharia de Dados",
-      "description": "Projetamos e construímos infraestruturas robustas para gerenciamento, processamento e armazenamento de dados em grande escala.",
+      "description": "Construa pipelines de dados robustos e data warehouses para insights acionáveis",
       "features": [
-        "Pipelines de dados",
-        "Data warehouses",
-        "Processos ETL/ELT",
-        "Arquiteturas cloud"
+        "Pipelines de dados e ETL",
+        "Design de data warehouses",
+        "Análise em tempo real"
       ]
     },
-    "machineLearning": {
-      "title": "Machine Learning",
-      "description": "Desenvolvemos modelos de machine learning personalizados que aprendem com seus dados para automatizar decisões e processos.",
+    "devops": {
+      "title": "DevOps e Automação",
+      "description": "Otimize o desenvolvimento com CI/CD, automação e monitoramento",
       "features": [
-        "Modelos preditivos",
-        "Sistemas de recomendação",
-        "Detecção de anomalias",
-        "MLOps e deployment"
+        "Configuração de pipelines CI/CD",
+        "Orquestração de containers",
+        "Monitoramento de infraestrutura"
       ]
+    },
+    "consulting": {
+      "title": "Consultoria Tecnológica",
+      "description": "Orientação estratégica em tecnologia para transformação digital e adoção de IA",
+      "features": [
+        "Roadmaps de transformação digital",
+        "Revisão de arquiteturas",
+        "Seleção de stack tecnológico"
+      ]
+    },
+    "platform": {
+      "title": "Platform Engineering",
+      "description": "Construa plataformas internas para desenvolvedores que aceleram equipes",
+      "features": [
+        "Autoatendimento para desenvolvedores",
+        "Automação de plataforma",
+        "Golden paths e templates"
+      ]
+    }
+  },
+  "techStack": {
+    "title": "Tecnologias com as Quais Trabalhamos",
+    "subtitle": "Stack tecnológico moderno cobrindo cloud, IA, desenvolvimento e plataformas de dados",
+    "note": "E muitas outras tecnologias para atender suas necessidades específicas"
+  },
+  "process": {
+    "title": "Como Trabalhamos",
+    "subtitle": "Um processo comprovado para entregar projetos bem-sucedidos",
+    "steps": {
+      "0": {
+        "title": "Descoberta e Planejamento",
+        "description": "Entendemos suas necessidades de negócio, desafios e objetivos para criar um roadmap de solução personalizado"
+      },
+      "1": {
+        "title": "Design e Arquitetura",
+        "description": "Nossos especialistas projetam soluções escaláveis e seguras alinhadas com as melhores práticas da indústria"
+      },
+      "2": {
+        "title": "Construção e Deploy",
+        "description": "Desenvolvimento ágil com entrega contínua, testes e feedback dos stakeholders"
+      },
+      "3": {
+        "title": "Suporte e Otimização",
+        "description": "Monitoramento contínuo, otimização e suporte para garantir o sucesso a longo prazo"
+      }
     }
   },
   "about": {
-    "title": "Sobre a Aiuda Labs",
-    "lead": "Somos uma startup inovadora focada em democratizar o acesso às tecnologias de inteligência artificial mais avançadas.",
-    "description": "Na Aiuda Labs, acreditamos que a IA e a análise de dados são as ferramentas-chave para resolver os desafios mais complexos do mundo moderno. Nossa equipe de especialistas combina conhecimento técnico profundo com visão estratégica para entregar soluções que realmente causam impacto.",
-    "stats": {
-      "projects": "Projetos Concluídos",
-      "clients": "Clientes Satisfeitos",
-      "accuracy": "Precisão dos Modelos"
-    },
-    "techStack": {
-      "title": "Tecnologias que Dominamos"
-    }
+    "title": "Por Que Escolher a Aiuda Labs",
+    "description": "Somos um parceiro tecnológico focado em entregar soluções práticas que geram resultados de negócio. Nossa equipe combina profunda expertise técnica com experiência da indústria em cloud, IA, segurança e desenvolvimento de software moderno. Atendemos clientes em toda a América Latina com equipes bilíngues e compreensão cultural."
   },
   "contact": {
-    "title": "Pronto para transformar seu negócio?",
-    "subtitle": "Entre em contato e descubra como a IA pode revolucionar sua empresa",
-    "info": {
-      "email": "Email",
-      "phone": "Telefone",
-      "whatsapp": "WhatsApp",
-      "location": "Localização"
-    },
+    "title": "Vamos Construir Algo Incrível",
+    "subtitle": "Pronto para transformar seu negócio com tecnologia? Entre em contato conosco.",
     "form": {
-      "name": "Seu nome",
-      "email": "Seu email",
-      "company": "Sua empresa",
+      "name": "Seu Nome",
+      "email": "Endereço de E-mail",
+      "company": "Nome da Empresa",
       "message": "Conte-nos sobre seu projeto",
       "submit": "Enviar Mensagem"
     }
   },
   "footer": {
-    "description": "Transformando o futuro com inteligência artificial e análise de dados.",
+    "description": "Soluções tecnológicas potencializadas por IA e expertise",
     "services": "Serviços",
-    "servicesList": {
-      "generativeAI": "IA Generativa",
-      "dataScience": "Ciência de Dados",
-      "dataEngineering": "Engenharia de Dados",
-      "machineLearning": "Machine Learning"
-    },
     "company": "Empresa",
-    "careers": "Carreiras",
     "follow": "Siga-nos",
     "rights": "Todos os direitos reservados."
   },
   "thankYou": {
-    "title": "Obrigado!",
-    "message": "Sua mensagem foi enviada com sucesso. Entraremos em contato dentro de 24 horas.",
+    "title": "Obrigado por entrar em contato!",
+    "message": "Recebemos sua mensagem e responderemos em breve.",
     "backHome": "Voltar ao Início"
-  },
-  "valueProp": {
-    "startup": {
-      "label": "Para Startups",
-      "title": "Construa com inteligência, escale com rapidez",
-      "subtitle": "Infraestrutura impulsionada por IA sem a complexidade ou o preço de soluções empresariais",
-      "features": [
-        {
-          "title": "Resultados rápidos em 30-90 dias",
-          "description": "Implementação ágil focada em impacto imediato nos negócios"
-        },
-        {
-          "title": "Modelos flexíveis de colaboração",
-          "description": "Expertise de alto nível quando você precisa, como você precisa"
-        },
-        {
-          "title": "Caminho claro do MVP à escala",
-          "description": "Infraestrutura que cresce junto com seu negócio"
-        }
-      ],
-      "cta": "Comece Sua Jornada"
-    },
-    "enterprise": {
-      "label": "Para Empresas",
-      "title": "Transforme com confiança",
-      "subtitle": "Fundamentos de TI comprovados aprimorados por capacidades de IA de ponta",
-      "features": [
-        {
-          "title": "Transformação estratégica",
-          "description": "Abordagem faseada de 12-18 meses com marcos claros de ROI"
-        },
-        {
-          "title": "Gestão de riscos e conformidade",
-          "description": "Segurança de nível empresarial e expertise regulatória LATAM"
-        },
-        {
-          "title": "Parceria de longo prazo",
-          "description": "Acompanhamento contínuo durante toda sua jornada digital"
-        }
-      ],
-      "cta": "Agende Consulta Estratégica"
-    }
-  },
-  "brandStory": {
-    "header": {
-      "title": "Onde IA Encontra Ajuda",
-      "subtitle": "Nosso nome conta nossa história: inteligência artificial que genuinamente ajuda",
-      "equation": "Tecnologia que trabalha para seu negócio, não o contrário"
-    },
-    "foundingInsight": {
-      "title": "A Visão Fundadora",
-      "content": "A AIuda Labs foi fundada em uma convicção simples mas poderosa: Inteligência Artificial deve ajudar as empresas, não complicá-las. Nosso nome—combinando AI com a palavra espanhola 'ayuda' (ajuda em português)—incorpora nossa missão de tornar a IA acessível, prática e genuinamente útil.",
-      "accent": "IA que ajuda. Literalmente."
-    },
-    "missionEvolution": {
-      "title": "A Evolução da Missão",
-      "content": "O que começou como um compromisso com 'IA que ajuda' evoluiu para uma abordagem abrangente de transformação tecnológica. Guiamos organizações através de migrações cloud otimizadas por IA, plataformas de dados que habilitam machine learning e infraestrutura que escala de forma inteligente.",
-      "accent": "Tecnologia que não ajuda não vale a pena implementar"
-    },
-    "regionalCommitment": {
-      "title": "O Compromisso Regional",
-      "content": "A América Latina representa um dos mercados mais dinâmicos do mundo para adoção de IA, com 95% dos executivos de tecnologia reconhecendo seu potencial transformacional. A AIuda Labs existe para conectar lacunas com equipes bilíngues que entendem tanto de tecnologia quanto de contexto de negócios.",
-      "accent": "Construindo parcerias estratégicas, não relações de fornecedor"
-    },
-    "mission": {
-      "quote": "Existimos para tornar a inteligência artificial genuinamente útil para empresas—de startups a grandes corporações, pela América Latina e além",
-      "tagline": "IA que ajuda. Literalmente."
-    },
-    "stats": [
-      {
-        "number": "95%",
-        "label": "Executivos LATAM veem IA Generativa como transformacional",
-        "color": "ai"
-      },
-      {
-        "number": "30-50%",
-        "label": "Ciclos de processo mais rápidos alcançados por nossos clientes",
-        "color": "ayuda"
-      },
-      {
-        "number": "10+",
-        "label": "Anos de expertise combinada da equipe",
-        "color": "security"
-      },
-      {
-        "number": "5",
-        "label": "Países atendidos pela América Latina",
-        "color": "it"
-      }
-    ]
-  },
-  "services": {
-    "title": "Nossos Serviços",
-    "subtitle": "Soluções tecnológicas integradas que combinam expertise comprovada em TI com inovação de IA de ponta",
-    "layers": {
-      "all": "Todos os Serviços",
-      "strategic": "Estratégia e Consultoria",
-      "core": "Tecnologia Central",
-      "delivery": "Entrega e Operações",
-      "specialized": "IA Especializada"
-    },
-    "strategic": {
-      "title": "Camada 1: Serviços Estratégicos e de Consultoria",
-      "digitalTransformation": {
-        "title": "Consultoria em Transformação Digital",
-        "description": "Roteiros de transformação empresarial que alinham investimentos tecnológicos com objetivos de negócio",
-        "features": [
-          {
-            "title": "Avaliação de maturidade",
-            "description": "Análise do estado atual e identificação de lacunas",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Roteiro de transformação",
-            "description": "Abordagem faseada com marcos claros",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Gestão de mudança",
-            "description": "Prontidão organizacional e planejamento de adoção",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "Não apenas recomendamos tecnologia—fazemos parceria com você para garantir que sua equipe possa sustentar melhorias muito depois do término do engajamento, construindo capacidade ao invés de dependência."
-      },
-      "technologyStrategy": {
-        "title": "Estratégia Tecnológica",
-        "description": "Planejamento tecnológico de múltiplos anos que equilibra inovação com implementação pragmática",
-        "features": [
-          {
-            "title": "Revisão de arquitetura",
-            "description": "Avaliação do estado atual e oportunidades de otimização",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Análise construir vs. comprar",
-            "description": "Frameworks de decisão baseados em dados",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Seleção de parceiros estratégicos",
-            "description": "Gestão de RFP e avaliação",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "Navegue decisões tecnológicas complexas com confiança, respaldado por nossa expertise em plataformas cloud, frameworks de IA e sistemas empresariais."
-      },
-      "aiReadiness": {
-        "title": "Avaliação de Prontidão para IA",
-        "description": "Avaliação abrangente da preparação da sua organização para adoção de IA",
-        "features": [
-          {
-            "title": "Avaliação de maturidade de dados",
-            "description": "Análise de qualidade, acessibilidade e governança",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Identificação de casos de uso",
-            "description": "Oportunidades de IA de alto impacto específicas para seu negócio",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Modelagem de ROI",
-            "description": "Projeções de impacto financeiro e roteiro de implementação",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Pule o hype e foque em aplicações de IA que entregam valor compartilhado mensurável, com cronogramas realistas e requisitos de recursos."
-      }
-    },
-    "core": {
-      "title": "Camada 2: Domínios Tecnológicos Centrais",
-      "cloudInfrastructure": {
-        "title": "Cloud e Infraestrutura",
-        "description": "Estratégia multi-cloud, migração e otimização aprimorada por gestão de custos impulsionada por IA",
-        "features": [
-          {
-            "title": "Migração cloud",
-            "description": "AWS, Azure, GCP - lift-and-shift ou rearquitetura",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Otimização de custos",
-            "description": "Dimensionamento de recursos e redução de desperdícios via IA",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Infraestrutura como Código",
-            "description": "Terraform, CloudFormation, provisionamento automatizado",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "Startups obtêm implementação cloud rápida em 30-90 dias. Empresas obtêm estratégias de migração faseadas que garantem continuidade do negócio enquanto modernizam a infraestrutura."
-      },
-      "dataAI": {
-        "title": "Dados e IA",
-        "description": "Modernização de plataforma de dados de ponta a ponta, desde data warehousing até capacidades avançadas de IA/ML",
-        "features": [
-          {
-            "title": "Modernização de plataforma de dados",
-            "description": "Data warehouses, data lakes e lakehouses modernos",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Soluções de IA/ML",
-            "description": "Modelos customizados, AutoML, pipelines MLOps",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Integração de IA Generativa",
-            "description": "Implementação de LLM, sistemas RAG, agentes",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Construímos plataformas de dados que não apenas armazenam informação—elas ajudam ativamente as equipes a tomar melhores decisões através de insights e automação impulsionados por IA."
-      },
-      "securityCompliance": {
-        "title": "Segurança e Conformidade",
-        "description": "Serviços de cibersegurança com governança de IA e expertise regulatória LATAM",
-        "features": [
-          {
-            "title": "Arquitetura de segurança",
-            "description": "Design zero-trust, gestão de identidade, criptografia",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Governança e risco de IA",
-            "description": "Frameworks de IA responsável, detecção de viés, explicabilidade",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Conformidade LATAM",
-            "description": "LGPD, soberania de dados, regulações regionais",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "Implementar IA sem governança adequada cria risco. Garantimos que seus sistemas de IA sejam seguros, conformes e confiáveis desde o primeiro dia."
-      },
-      "platformEngineering": {
-        "title": "Engenharia de Plataforma",
-        "description": "DevOps moderno, modernização de aplicações e automação inteligente",
-        "features": [
-          {
-            "title": "DevOps/CI-CD",
-            "description": "Pipelines automatizados, containerização, orquestração",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Modernização de aplicações",
-            "description": "Microsserviços, serverless, arquitetura cloud-native",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Serviços de integração",
-            "description": "Gestão de APIs, arquitetura orientada a eventos, iPaaS",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Modernize seu pipeline de desenvolvimento para reduzir o tempo de deployment em 40-70% mantendo os padrões de segurança e conformidade críticos para operações empresariais."
-      }
-    },
-    "delivery": {
-      "title": "Camada 3: Entrega e Operações",
-      "projectManagement": {
-        "title": "Escritório de Gestão de Projetos",
-        "description": "Entrega ágil com insights impulsionados por IA e rastreamento inteligente",
-        "features": [
-          {
-            "title": "Entrega Agile/Scrum",
-            "description": "Planejamento de sprints, cerimônias, retrospectivas",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Setup de PMO",
-            "description": "Frameworks de governança, gestão de portfólio",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Gestão de riscos",
-            "description": "Identificação e mitigação de riscos assistida por IA",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Mantenha projetos no caminho certo com monitoramento aprimorado por IA que sinaliza riscos cedo, otimiza alocação de recursos e prevê gargalos antes que impactem a entrega."
-      },
-      "devops": {
-        "title": "Serviços DevOps",
-        "description": "Pipelines de entrega contínua com automação inteligente e monitoramento",
-        "features": [
-          {
-            "title": "Pipelines CI/CD",
-            "description": "Workflows automatizados de build, teste e deployment",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Automação de infraestrutura",
-            "description": "Gestão de configuração, IaC, sistemas auto-recuperáveis",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Monitoramento e observabilidade",
-            "description": "Detecção de anomalias e alertas via IA",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Implemente práticas DevOps que reduzem o tempo de deployment de semanas para horas, com monitoramento impulsionado por IA que identifica problemas antes que afetem usuários."
-      },
-      "dba": {
-        "title": "Administração de Banco de Dados",
-        "description": "Gestão, otimização e ajuste de performance de bancos de dados aprimorado por IA",
-        "features": [
-          {
-            "title": "Otimização de banco de dados",
-            "description": "Ajuste de queries, estratégias de indexação, performance",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Backup e recuperação",
-            "description": "Backups automatizados, planejamento de disaster recovery",
-            "aiEnhanced": false
-          },
-          {
-            "title": "Serviços de migração",
-            "description": "Upgrades de banco de dados, migração cloud, consolidação",
-            "aiEnhanced": false
-          }
-        ],
-        "helpText": "Garanta que seus bancos de dados tenham performance ideal com otimização de queries assistida por IA e manutenção preditiva que previne problemas antes que impactem operações."
-      },
-      "managedServices": {
-        "title": "Serviços Gerenciados",
-        "description": "Suporte operacional 24/7 com manutenção proativa impulsionada por IA",
-        "features": [
-          {
-            "title": "Monitoramento 24/7",
-            "description": "Monitoramento contínuo de infraestrutura e aplicações",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Gestão de incidentes",
-            "description": "Resposta rápida, análise de causa raiz, resolução",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Manutenção proativa",
-            "description": "Problemas previstos por IA, remediação automatizada",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Foque no seu negócio enquanto gerenciamos sua infraestrutura, com sistemas de IA que preveem e previnem problemas antes que causem downtime."
-      }
-    },
-    "specialized": {
-      "title": "Camada 4: Tecnologias Especializadas e Emergentes",
-      "generativeAI": {
-        "title": "Soluções de IA Generativa",
-        "description": "Implementação de LLM, sistemas RAG e aplicações de IA customizadas",
-        "features": [
-          {
-            "title": "Chatbots e assistentes",
-            "description": "Atendimento ao cliente, bases de conhecimento internas",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Geração de conteúdo",
-            "description": "Textos de marketing, documentação, ativos criativos",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Processamento de documentos",
-            "description": "OCR, extração, análise, resumo",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Implemente soluções de IA Generativa que entregam valor real aos negócios—desde redução de 70% nos custos de atendimento ao cliente até processamento de documentos 82% mais rápido."
-      },
-      "agenticAI": {
-        "title": "Sistemas de IA Agêntica",
-        "description": "Agentes de IA autônomos que compreendem objetivos e executam tarefas de forma independente",
-        "features": [
-          {
-            "title": "Execução orientada a objetivos",
-            "description": "Agentes que decompõem tarefas complexas autonomamente",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Orquestração multi-agente",
-            "description": "Sistemas coordenados para workflows complexos",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Humano no circuito",
-            "description": "Workflows de aprovação para decisões críticas",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "IA Agêntica só ajuda quando adequadamente escalonada. Começamos com uma 'avaliação de ajuda'—identificando onde execução autônoma agrega valor versus onde julgamento humano permanece essencial."
-      },
-      "processAutomation": {
-        "title": "Automação de Processos",
-        "description": "Automação inteligente combinando RPA com IA para workflows de ponta a ponta",
-        "features": [
-          {
-            "title": "RPA com IA",
-            "description": "Automação robótica de processos aprimorada por ML",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Otimização de workflows",
-            "description": "Mineração de processos, identificação de gargalos",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Automação de integração",
-            "description": "Workflows inteligentes sistema-a-sistema",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Alcance ciclos de processo 30-50% mais rápidos automatizando tarefas repetitivas enquanto mantém a supervisão humana crítica para confiança e conformidade."
-      },
-      "customAI": {
-        "title": "Desenvolvimento de IA Customizada",
-        "description": "Soluções de IA sob medida para seus desafios únicos de negócio",
-        "features": [
-          {
-            "title": "Desenvolvimento de modelos customizados",
-            "description": "Modelos ML/IA construídos especificamente para seus dados",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Pipelines MLOps",
-            "description": "Treinamento, teste e deployment automatizados",
-            "aiEnhanced": true
-          },
-          {
-            "title": "Monitoramento de modelos",
-            "description": "Rastreamento de performance, detecção de drift, retreinamento",
-            "aiEnhanced": true
-          }
-        ],
-        "helpText": "Quando soluções prontas não servem, construímos sistemas de IA customizados que atendem suas necessidades específicas—com monitoramento contínuo para garantir performance sustentada."
-      }
-    },
-    "cta": {
-      "title": "Pronto para construir uma parceria estratégica?",
-      "subtitle": "Vamos conversar sobre como a IA pode ajudar seu negócio a alcançar resultados mensuráveis",
-      "button": "Iniciar a Conversa"
-    }
   }
 }
