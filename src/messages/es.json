@@ -1,149 +1,149 @@
 {
   "navigation": {
     "home": "Inicio",
-    "services": "Servicios",
+    "services": "Talento",
     "about": "Nosotros",
     "blog": "Blog",
     "contact": "Contacto"
   },
   "hero": {
-    "title": "Soluciones tecnológicas potenciadas por",
-    "titleAccent": "IA y experiencia",
-    "description": "Ayudamos a las empresas a crecer con servicios de TI modernos potenciados por inteligencia artificial. Desde infraestructura en la nube hasta implementación de IA, entregamos resultados.",
+    "title": "Escala tu equipo con",
+    "titleAccent": "talento tecnológico top",
+    "description": "Servicios de staff augmentation conectándote con profesionales experimentados en desarrollo de software, ingeniería de datos, IA/ML, y más. Obtén la experiencia que necesitas, cuando la necesitas.",
     "cta": {
-      "primary": "Agendar Llamada",
-      "secondary": "Ver Servicios"
+      "primary": "Contratar Talento",
+      "secondary": "Ver Perfiles"
     }
   },
-  "services": {
-    "title": "Nuestros Servicios",
-    "subtitle": "Soluciones tecnológicas integrales para impulsar tu negocio",
-    "cta": "Hablemos de tu proyecto",
-    "software": {
-      "title": "Ingeniería de Software",
-      "description": "Desarrollo de software personalizado con frameworks modernos y mejores prácticas",
-      "features": [
+  "profiles": {
+    "title": "Perfiles de Talento Disponibles",
+    "subtitle": "Profesionales evaluados listos para unirse a tu equipo y entregar resultados",
+    "cta": "Encuentra tu match perfecto",
+    "projectManager": {
+      "title": "Project Managers",
+      "description": "PMs experimentados que llevan proyectos a completarse exitosamente con metodologías ágiles",
+      "skills": [
+        "Agile/Scrum/Kanban",
+        "Gestión de stakeholders",
+        "Planificación de riesgos y presupuestos"
+      ]
+    },
+    "softwareDeveloper": {
+      "title": "Desarrolladores de Software",
+      "description": "Desarrolladores full-stack y especializados con dominio de lenguajes y frameworks modernos",
+      "skills": [
         "Desarrollo full-stack",
-        "Diseño e integración de APIs",
-        "Modernización de sistemas legacy"
+        "Arquitectura de microservicios",
+        "APIs RESTful y GraphQL"
       ]
     },
-    "cloud": {
-      "title": "Nube e Infraestructura",
-      "description": "Soluciones escalables en AWS, Azure y Google Cloud Platform",
-      "features": [
-        "Migración y optimización cloud",
-        "Infraestructura como Código",
-        "Estrategias multi-nube"
+    "businessAnalyst": {
+      "title": "Analistas de Negocios",
+      "description": "Conectan necesidades de negocio con soluciones técnicas mediante requerimientos claros",
+      "skills": [
+        "Levantamiento de requerimientos",
+        "Documentación de procesos",
+        "User stories y casos de uso"
       ]
     },
-    "ai": {
-      "title": "IA y Machine Learning",
-      "description": "Soluciones prácticas de IA incluyendo LLMs, visión artificial y modelos predictivos",
-      "features": [
-        "Integración de LLMs (ChatGPT, Claude)",
-        "Modelos ML personalizados",
-        "Automatización con IA"
+    "qaEngineer": {
+      "title": "Ingenieros QA",
+      "description": "Especialistas en aseguramiento de calidad garantizando entrega de software robusto y sin errores",
+      "skills": [
+        "Automatización de pruebas (Selenium, Cypress)",
+        "Pruebas de rendimiento",
+        "Pruebas de API e integración"
       ]
     },
-    "security": {
-      "title": "Ciberseguridad",
-      "description": "Soluciones de seguridad integrales para proteger tus activos digitales",
-      "features": [
-        "Auditorías y pruebas de seguridad",
-        "Cumplimiento (SOC2, ISO 27001)",
-        "Monitoreo de amenazas"
+    "dataAnalyst": {
+      "title": "Analistas de Datos",
+      "description": "Convierten datos en insights accionables con análisis avanzado y visualización",
+      "skills": [
+        "SQL y modelado de datos",
+        "Herramientas BI (Tableau, Power BI)",
+        "Análisis estadístico"
       ]
     },
-    "data": {
-      "title": "Ingeniería de Datos",
-      "description": "Construye pipelines de datos robustos y data warehouses para insights accionables",
-      "features": [
-        "Pipelines de datos y ETL",
-        "Diseño de data warehouses",
-        "Analítica en tiempo real"
+    "dataEngineer": {
+      "title": "Ingenieros de Datos",
+      "description": "Construyen y mantienen pipelines de datos e infraestructura escalable",
+      "skills": [
+        "Pipelines ETL/ELT",
+        "Data warehousing (Snowflake, Redshift)",
+        "Apache Spark y Kafka"
       ]
     },
-    "devops": {
-      "title": "DevOps y Automatización",
-      "description": "Optimiza el desarrollo con CI/CD, automatización y monitoreo",
-      "features": [
-        "Configuración de pipelines CI/CD",
-        "Orquestación de contenedores",
-        "Monitoreo de infraestructura"
+    "dba": {
+      "title": "Administradores de Bases de Datos",
+      "description": "DBAs expertos gestionando rendimiento, seguridad y confiabilidad de bases de datos",
+      "skills": [
+        "Optimización SQL/NoSQL",
+        "Backup y recuperación ante desastres",
+        "Tuning de rendimiento"
       ]
     },
-    "consulting": {
-      "title": "Consultoría Tecnológica",
-      "description": "Guía estratégica en tecnología para transformación digital y adopción de IA",
-      "features": [
-        "Roadmaps de transformación digital",
-        "Revisión de arquitecturas",
-        "Selección de stack tecnológico"
-      ]
-    },
-    "platform": {
-      "title": "Platform Engineering",
-      "description": "Construye plataformas internas para desarrolladores que aceleran equipos",
-      "features": [
-        "Autoservicio para desarrolladores",
-        "Automatización de plataforma",
-        "Golden paths y templates"
+    "aiml": {
+      "title": "AI/ML y GenAI",
+      "description": "Especialistas en IA implementando modelos de machine learning y soluciones de IA generativa",
+      "skills": [
+        "Integración de LLMs y prompt engineering",
+        "Desarrollo de modelos ML (TensorFlow, PyTorch)",
+        "Computer vision y NLP"
       ]
     }
   },
   "techStack": {
-    "title": "Tecnologías con las que Trabajamos",
-    "subtitle": "Stack tecnológico moderno cubriendo cloud, IA, desarrollo y plataformas de datos",
+    "title": "Tecnologías que Domina Nuestro Talento",
+    "subtitle": "Experiencia en stack tecnológico moderno en cloud, desarrollo, datos y plataformas de IA",
     "note": "Y muchas más tecnologías para ajustarse a tus necesidades específicas"
   },
   "process": {
-    "title": "Cómo Trabajamos",
-    "subtitle": "Un proceso probado para entregar proyectos exitosos",
+    "title": "Cómo Funciona el Staff Augmentation",
+    "subtitle": "Un proceso simplificado para conseguir el talento correcto en tu equipo rápidamente",
     "steps": {
       "0": {
-        "title": "Descubrimiento y Planeación",
-        "description": "Entendemos tus necesidades de negocio, desafíos y objetivos para crear un roadmap de solución a medida"
+        "title": "Cuéntanos tus Necesidades",
+        "description": "Comparte los requerimientos de tu proyecto, stack tecnológico y las habilidades que buscas"
       },
       "1": {
-        "title": "Diseño y Arquitectura",
-        "description": "Nuestros expertos diseñan soluciones escalables y seguras alineadas con mejores prácticas de la industria"
+        "title": "Hacemos el Match de Talento",
+        "description": "Seleccionamos cuidadosamente profesionales pre-evaluados que se ajustan a tus requerimientos técnicos y culturales"
       },
       "2": {
-        "title": "Construcción y Despliegue",
-        "description": "Desarrollo ágil con entrega continua, pruebas y retroalimentación de stakeholders"
+        "title": "Entrevista e Incorporación",
+        "description": "Entrevistas a los candidatos y nosotros manejamos contratos, onboarding y tareas administrativas"
       },
       "3": {
-        "title": "Soporte y Optimización",
-        "description": "Monitoreo continuo, optimización y soporte para asegurar el éxito a largo plazo"
+        "title": "Comienza a Entregar",
+        "description": "Tus nuevos miembros del equipo se integran sin problemas y comienzan a contribuir desde el día uno"
       }
     }
   },
   "about": {
     "title": "Por Qué Elegir Aiuda Labs",
-    "description": "Somos un socio tecnológico enfocado en entregar soluciones prácticas que generan resultados de negocio. Nuestro equipo combina profunda experiencia técnica con conocimiento de la industria en cloud, IA, seguridad y desarrollo de software moderno. Atendemos clientes en toda Latinoamérica con equipos bilingües y entendimiento cultural."
+    "description": "Proporcionamos servicios de staff augmentation que ayudan a las empresas a escalar sus equipos técnicos con talento top de Latinoamérica. Nuestros profesionales son experimentados, hablan inglés con fluidez y trabajan en tu zona horaria. Ya sea que necesites un solo desarrollador o un equipo completo, tenemos el talento para ayudarte a tener éxito."
   },
   "contact": {
-    "title": "Construyamos Algo Grandioso",
-    "subtitle": "¿Listo para transformar tu negocio con tecnología? Contáctanos.",
+    "title": "¿Listo para Escalar tu Equipo?",
+    "subtitle": "Cuéntanos tus necesidades y encontraremos el talento perfecto para ti.",
     "form": {
       "name": "Tu Nombre",
       "email": "Correo Electrónico",
       "company": "Nombre de la Empresa",
-      "message": "Cuéntanos sobre tu proyecto",
-      "submit": "Enviar Mensaje"
+      "message": "¿Qué roles buscas cubrir?",
+      "submit": "Comenzar"
     }
   },
   "footer": {
-    "description": "Soluciones tecnológicas potenciadas por IA y experiencia",
-    "services": "Servicios",
+    "description": "Staff augmentation con talento tecnológico top de Latinoamérica",
+    "services": "Talento",
     "company": "Empresa",
     "follow": "Síguenos",
     "rights": "Todos los derechos reservados."
   },
   "thankYou": {
     "title": "¡Gracias por contactarnos!",
-    "message": "Hemos recibido tu mensaje y te responderemos pronto.",
+    "message": "Hemos recibido tu mensaje y te responderemos pronto con opciones de talento.",
     "backHome": "Volver al Inicio"
   }
 }

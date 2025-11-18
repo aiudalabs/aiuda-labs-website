@@ -10,7 +10,7 @@ import {
 import Image from 'next/image';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
-import ServicesGrid from '@/components/ServicesGrid';
+import ProfilesGrid from '@/components/ProfilesGrid';
 import TechStack from '@/components/TechStack';
 import WorkProcess from '@/components/WorkProcess';
 
@@ -58,7 +58,7 @@ export default async function HomePage({
                 {t('hero.cta.primary')}
               </a>
               <a
-                href="#services"
+                href="#profiles"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-blue-600 text-blue-600 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-all"
               >
                 {t('hero.cta.secondary')}
@@ -68,8 +68,8 @@ export default async function HomePage({
         </div>
       </section>
 
-      {/* Services Grid - Simple 8 services */}
-      <ServicesGrid />
+      {/* Talent Profiles - Available roles for Staff Augmentation */}
+      <ProfilesGrid />
 
       {/* Tech Stack */}
       <TechStack />
